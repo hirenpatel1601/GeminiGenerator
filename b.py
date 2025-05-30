@@ -13,7 +13,7 @@ def get_gemini_response(prompt):
 
 
 st.title("The Professor's Academy Assistant")
-st.header("Ask me anything")
+st.header("Ask me anything I Will help you with your studies!")
 
 userprompt = st.text_area("Enter your question here:", key="prompt")
 submitbtn = st.button("Get Answer")
