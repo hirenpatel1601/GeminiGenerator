@@ -3,7 +3,7 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 load_dotenv()
 
-genai.configure(api_key="AIzaSyDzhNYAdbkqaIM9Kfpr3zKUWKNXhTgm5G8")
+genai.configure(api_key="GOOGLE_API_KEY")
 
 
 def get_gemini_response(prompt):
