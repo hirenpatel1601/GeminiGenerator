@@ -6,6 +6,8 @@ load_dotenv()
 genai.configure(api_key="AIzaSyDzhNYAdbkqaIM9Kfpr3zKUWKNXhTgm5G8")
 
 
+
+
 def get_gemini_response(prompt):
     model = genai.GenerativeModel('gemini-2.5-flash-preview-05-20')
     response = model.generate_content(prompt)

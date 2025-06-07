@@ -2,9 +2,8 @@ import streamlit as st
 import google.generativeai as genai
 from dotenv import load_dotenv
 load_dotenv()
-
-genai.configure(api_key="GOOGLE_API_KEY")
-
+genai.configure(api_key="AIzaSyDzhNYAdbkqaIM9Kfpr3zKUWKNXhTgm5G8")
+#genai.configure(api_key="GOOGLE_API_KEY")
 
 def get_gemini_response(prompt):
     model = genai.GenerativeModel('gemini-2.5-flash-preview-05-20')
