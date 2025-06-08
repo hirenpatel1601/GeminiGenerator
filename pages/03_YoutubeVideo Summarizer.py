@@ -35,7 +35,6 @@ if submitbtn and url.strip():
         try:
             # Fetch transcript
             transcript_list = YouTubeTranscriptApi.get_transcript(video_id)
-            #print(transcript_list)
             if not transcript_list:
                 st.error("No transcript found for this video.")
                 raise NoTranscriptFound("No transcript available for this video.")
@@ -48,7 +47,7 @@ if submitbtn and url.strip():
             st.subheader("Video Summary")
             st.write(summary)
             st.subheader("Notes From Video")
-            
+            st.info("Notes is getting generated it will take few seconds...")
             notes = get_gemini_summery(transcript_text + " create notes from this video for study purpose.")
             st.write(notes)
 
