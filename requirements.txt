@@ -3,3 +3,4 @@ google-generativeai
 python-dotenv
 pillow
 google-genai
+youtube_transcript_api
