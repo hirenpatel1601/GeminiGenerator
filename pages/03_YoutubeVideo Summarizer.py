@@ -45,11 +45,11 @@ if submitbtn and url.strip():
             #st.header(transcript_text)    
             st.info("Transcript successfully fetched. Generating summary...")
             summary = get_gemini_summery(transcript_text)
-            st.subheader("Video Summary")
-            st.write(summary)
-            st.subheader("Notes From Video")
             notes = get_gemini_summery(transcript_text + " create notes from this video for study purpose.")
+            st.subheader("Video Summary")
             st.write(notes)
+            st.subheader("Notes From Video")
+            //st.write(notes)
 
         except (TranscriptsDisabled, NoTranscriptFound):
             st.error("Transcript not available for this video.")
